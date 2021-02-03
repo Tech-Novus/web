@@ -12,4 +12,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+// Dashboard
+router.get('/handloom', ensureAuthenticated, (req, res) =>
+  res.render('handloom', {
+    user: req.user
+  })
+);
+
 module.exports = router;

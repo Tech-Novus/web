@@ -9,9 +9,230 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/journal/bootstrap.min.css"
     />
-    <title>Node.js & Passport Login App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+        .asteriskField {
+          display: none;
+        }
+    
+        form .alert ul li {
+          list-style: none;
+        }
+    
+        form .alert ul {
+          padding: 0;
+          margin: 0;
+        }
+    
+        /* GALLERY ITEMS */
+        .fg-gallery:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+    
+        .gallery-items {
+          cursor: pointer;
+          float: left;
+          overflow: hidden;
+          height: 220px;
+          width: 32%;
+          margin-right: 2%;
+          margin-bottom: 2%;
+        }
+    
+        /* GALLERY COLUMNS */
+        .cols-2 .gallery-items {
+          width: 49%;
+        }
+    
+        .cols-2 .gallery-items:nth-child(2n) {
+          margin-right: 0;
+        }
+    
+        .cols-3 .gallery-items {
+          width: calc(96% / 3);
+        }
+    
+        .cols-3 .gallery-items:nth-child(3n) {
+          margin-right: 0;
+        }
+    
+        .cols-4 .gallery-items {
+          width: calc(94% / 4);
+        }
+    
+        .cols-4 .gallery-items:nth-child(4n) {
+          margin-right: 0;
+        }
+    
+        .cols-5 .gallery-items {
+          width: calc(92% / 5);
+        }
+    
+        .cols-5 .gallery-items:nth-child(5n) {
+          margin-right: 0;
+        }
+    
+        .cols-6 .gallery-items {
+          width: calc(90% / 6);
+        }
+    
+        .cols-6 .gallery-items:nth-child(6n) {
+          margin-right: 0;
+        }
+    
+        .body-cover {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          opacity: 0;
+          visibility: hidden;
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+        }
+    
+        .body-cover.active {
+          opacity: 1;
+          visibility: visible;
+          z-index: 9999;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+    
+        .body-cover.active img {
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+          opacity: 0;
+          visibility: hidden;
+          -webkit-animation: scale .3s .3s ease forwards;
+          animation: scale .3s .3s ease forwards;
+          box-shadow: 0 0 180px 0 rgb(24, 24, 24);
+          border-radius: 5px;
+        }
+    
+        @-webkit-keyframes scale {
+          to {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: scale(1);
+            transform: scale(1)
+          }
+        }
+    
+        @keyframes scale {
+          to {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: scale(1);
+            transform: scale(1)
+          }
+        }
+    
+        /* arrows */
+        .gallery-arrow {
+          position: fixed;
+          top: 47%;
+          width: 30px;
+          height: 30px;
+          z-index: 9999;
+          cursor: pointer;
+        }
+    
+        .gallery-arrow>svg {
+          fill: #fff;
+          -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+    
+        .gallery-arrow:active svg {
+          -webkit-transition-duration: .0s;
+          transition-duration: .0s;
+          -webkit-transform: scale(.9);
+          transform: scale(.9);
+        }
+    
+        .next-btn {
+          right: 25px;
+        }
+    
+        .prev-btn {
+          left: 25px;
+        }
+    
+        /* close button */
+        .close-btn {
+          position: fixed;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          top: 0;
+          right: 0;
+          width: 75px;
+          height: 75px;
+          z-index: 9999;
+          cursor: pointer;
+        }
+    
+        .close-btn svg {
+          fill: #fff;
+          width: 15px;
+          height: 15px;
+          -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+          -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+        }
+    
+        .close-btn:hover svg {
+          -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+        }
+      </style>
+    <title>Maitreya Marketing</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <div class="container">
+        <a class="navbar-brand">Maitreya Marketing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/handloom">Handloom bags</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard">Males clothes shop bags</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container"><%- body %></div>
 
     <script
@@ -29,5 +250,186 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      let FgGallery = function (selector) {
+    isTrue = false;
+    this.argumens = arguments;
+    this.gallerySelector = document.querySelectorAll(selector);
+    this.activeImage; // active (open) image
+    this.bodyCover = document.createElement('div');
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    if (!document.querySelector('.body-cover')) {
+      document.body.appendChild(this.bodyCover);
+      this.bodyCover.classList.add('body-cover');
+      document.body.appendChild(this.bodyCover);
+      var bodyCoverDeps = `<div>
+          <div class="close-btn">
+              <svg class="close-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9" xmlns:xlink="http://www.w3.org/1999/xlink">   <path class="close-svg" d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z"/> </svg>
+          </div>
+          <div class="gallery-arrow next-btn"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492.004 492.004" xml:space="preserve"> <g> <g> <path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12 c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028 c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265 c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/> </g> </g> </svg></div>
+          <div class="gallery-arrow prev-btn"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" xml:space="preserve"> <g> <g> <path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084 c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864 l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"/> </g> </g> </svg></div>
+      </div>`;
+      bodyCoverDeps = document.createRange().createContextualFragment(bodyCoverDeps).firstElementChild
+      this.bodyCover.appendChild(bodyCoverDeps);
+    }
+
+    this.nextBtn = document.querySelector('.next-btn'); // next button
+    this.prevBtn = document.querySelector('.prev-btn'); // previous button
+    this.closeBtb = document.querySelector('.close-btn'); // close image button
+
+    this.gallerySequence = 0; // gallery
+    this.galleryItemSequence = 0; // gallery image
+
+    // Adding cols class
+    this.gallerySelector[0].classList.add(`cols-${this.argumens[1].cols}`);
+
+    // Original images
+    this.originalImages = {} // galleries with images
+
+    // init functions
+    this.generateItems();
+    this.closeImage();
+    this.styles();
+  }
+
+  // Generate image items
+  FgGallery.prototype.generateItems = function () {
+    let This = this;
+    this.gallerySelector.forEach(function (galleryContainer, i) {
+      This.originalImages[`gallery${i}`] = []
+
+      galleryContainer.querySelectorAll('img').forEach(function (imageItems, key) {
+        This.originalImages[`gallery${i}`].push(imageItems); // Save original images
+
+        // create new image elements
+        var newImages = '';
+        newImages += `<div class="gallery-items" style="background: url(${imageItems.src}) center / cover; "></div>`
+        newImages = galleryContainer.appendChild(document.createRange().createContextualFragment(newImages).firstElementChild);
+        imageItems.remove(); // Remove original images
+
+        // open image
+        newImages.onclick = function () {
+          This.galleryItemSequence = key;
+          This.gallerySequence = i;
+          This.next();
+          This.back();
+
+          This.bodyCover.classList.add('active'); // active background cover
+          This.activeImage = This.originalImages[`gallery${i}`][key].cloneNode(true);
+          This.bodyCover.appendChild(This.activeImage);
+          imagePopResize(This.activeImage);
+        }
+
+        // sizing image on window resize
+        window.addEventListener('resize', function () {
+          if (This.activeImage) {
+            imagePopResize(This.activeImage);
+          }
+        })
+
+        // sizing image
+        function imagePopResize(elem) {
+          if (elem.naturalWidth < window.innerWidth && elem.naturalHeight < window.innerHeight) {
+            elem.style.width = 'auto';
+            elem.style.height = 'auto';
+          }
+
+          if (elem.offsetWidth > window.innerWidth) {
+            elem.style.width = '80%';
+            elem.style.height = 'auto';
+          }
+
+          if (elem.offsetHeight > window.innerHeight) {
+            elem.style.width = 'auto';
+            elem.style.height = '80%';
+          }
+        }
+      })
+    })
+  }
+
+  // next
+  FgGallery.prototype.next = function () {
+    this.nextBtn.onclick = () => {
+      this.galleryItemSequence++
+      if (this.galleryItemSequence < this.originalImages[`gallery${this.gallerySequence}`].length) {
+        this.activeImage.src = this.originalImages[`gallery${this.gallerySequence}`][this.galleryItemSequence].src;
+      } else {
+        this.galleryItemSequence = 0
+        this.activeImage.src = this.originalImages[`gallery${this.gallerySequence}`][0].src;
+      }
+    }
+  }
+
+  // back
+  FgGallery.prototype.back = function () {
+    this.prevBtn.onclick = () => {
+      this.galleryItemSequence--;
+      if (this.galleryItemSequence > -1) {
+        this.activeImage.src = this.originalImages[`gallery${this.gallerySequence}`][this.galleryItemSequence].src
+      } else {
+        this.galleryItemSequence = this.originalImages[`gallery${this.gallerySequence}`].length - 1
+        this.activeImage.src = this.originalImages[`gallery${this.gallerySequence}`][this.galleryItemSequence].src
+      }
+    }
+  }
+
+  // close image
+  FgGallery.prototype.closeImage = function () {
+    this.bodyCover.onclick = (e) => {
+      if (e.target.classList.contains('active') || e.target.classList.contains('close-btn') || e.target.classList.contains('close-svg')) {
+        this.bodyCover.classList.remove('active');
+        this.bodyCover.querySelector('img').remove();
+      }
+    }
+  }
+console.log(screen.width)
+  // applying styles
+  FgGallery.prototype.styles = function () {
+    if (typeof this.argumens[1].style) {
+      for (const key in this.argumens[1].style) {
+        document.querySelectorAll(`${this.argumens[0]} .gallery-items`).forEach(items => {
+          items.style[key] = this.argumens[1].style[key]
+        })
+      }
+    }
+  }
+  if (screen.width < 850) {
+      var a = new FgGallery('.fg-gallery', {
+          cols: 3,
+          style: {
+              border: '10px solid #fff',
+              height: '180px',
+              borderRadius: '5px',
+              boxShadow: '0 2px 10px -5px #858585',
+          }
+      })
+  }
+  if (screen.width < 600) {
+      var a = new FgGallery('.fg-gallery', {
+          cols: 2,
+          style: {
+              border: '10px solid #fff',
+              height: '180px',
+              borderRadius: '5px',
+              boxShadow: '0 2px 10px -5px #858585',
+          }
+      })
+  }
+  if (screen.width > 800) {
+      var a = new FgGallery('.fg-gallery', {
+          cols: 4,
+          style: {
+              border: '10px solid #fff',
+              height: '180px',
+              borderRadius: '5px',
+              boxShadow: '0 2px 10px -5px #858585',
+          }
+      })
+  }
+</script>
+
   </body>
 </html>
