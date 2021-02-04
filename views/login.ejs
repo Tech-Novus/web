@@ -1,33 +1,33 @@
+<div style="display: flex; justify-content: center;">
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/maitreya%20marketing%20new%20vc.png" style="width: 60%; height: 60%; object-fit: cover; overflow: hidden;">
+  </div>
 <div class="row mt-5">
   <div class="col-md-6 m-auto">
     <div class="card card-body">
-      <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+      <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt" style="color: #e09b6d;"></i>  Passcode</h1>
       <form action="/users/login" method="POST">
         <div class="form-group">
-          <label for="email">Email</label>
           <input
-            type="email"
+            type="hidden"
             id="email"
             name="email"
             class="form-control"
             placeholder="Enter Email"
+            value="maitreyapatni25@gmail.com"
           />
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
+          <label for="password">Passcode</label>
           <input
             type="password"
             id="password"
             name="password"
             class="form-control"
-            placeholder="Enter Password"
+            placeholder="Enter Passcode"
           />
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <button type="submit" class="btn btn-primary btn-block" style="background-color: #5a443a;"><i class="fas fa-sign-in-alt" style="color: #e09b6d;"></i></button>
       </form>
-      <p class="lead mt-4">
-        No Account? <a href="/users/register">Register</a>
-      </p>
     </div>
   </div>
 </div>
