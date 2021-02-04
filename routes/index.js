@@ -70,7 +70,7 @@ router.get('/flexo', ensureAuthenticated, (req, res) =>
 
 // Double colour + models
 router.get('/jewellery', ensureAuthenticated, (req, res) =>
-  res.render('doublewith', {
+  res.render('jewellery', {
     user: req.user
   })
 );
