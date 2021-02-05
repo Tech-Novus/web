@@ -1,50 +1,14 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
     <div class="container">
-      <a class="navbar-brand">Maitreya Marketing</a>
+      <a class="navbar-brand" style="clear: both"><b><h4 style="color: #5a443a; float: left; width: 50%;">Maitreya </h4><h4  style="color: #e09b6d; float: right; width: 50%; text-align: right;"> Marketing</h4></b></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" style="color: #e09b6d;" href="/dashboard">Multi colour + images</a>
-      </li>
-        <li class="nav-item">
-            <a class="nav-link" style="color: #e09b6d;" href="/single">Single colour</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #e09b6d;" href="/multicolorwithout">Multi colour</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #e09b6d;" href="/double">Double colour</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #e09b6d;" href="/doublewith">Double colour + models</a>
-          </li>
-
-          <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false" style="color: #e09b6d;">
-                  More
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <div class="dropdown-divider"></div>
-              <a class="nav-link" href="/handloom">Handloom bags</a>
-              <a class="nav-link" href="/males">Males clothes shop bags</a>
-              <a class="nav-link" href="/flexo">Flexo designs</a>
-              <a class="nav-link" href="/jeans">Jeans shop bags</a>
-              <a class="nav-link" href="/jewellery">Jewellery shop bags</a>
-              <a class="nav-link" href="/marriage">Marriage bags</a>
-              <a class="nav-link" href="/mobile">Mobile shop bags</a>
-              <a class="nav-link" href="/shoes">Shoe shop bags</a>
-              <a class="nav-link" href="/sweets">Sweet shop bags</a>
-              <a class="nav-link" href="/kids">Kidswear shop bags</a>
-          </div>
-      </li>
-    </ul>
+    <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <a class="nav-link" style="color: #e09b6d;" href="/users/logout">Logout</a>
     </li>
@@ -54,478 +18,147 @@
   </nav>
 <div class="container p-3">
 
-<h1 class="mt-4">Multicolor bags</h1>
-<p class="lead mb-3">Welcome <%= user.name %>
-</p>
+<div style="display:inline-block" class="text-center">
+<img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00002.jpg" style="height: 240px; width: 240px;">
+<br>
+<br>
+<button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/multic';" class="btn btn-primary btn-lg custom" style="align-self: center;">Multi colour + images</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR%20WITHOUT%20IMAGE/VOLUME-1-DESIGN-00011.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/multicolorwithout';" class="btn btn-primary btn-lg custom" style="align-self: center;">Multi colour</button>
+</div>
 
-<div class="fg-gallery">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00002.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00003.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00004.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00005.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00006.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00007.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00008.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00009.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00001.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00002.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00003.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00004.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00005.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00006.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00007.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00008.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-1-DESIGN-00009.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00010.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00011.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00012.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00013.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00014.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00015.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00016.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00017.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00018.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00019.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00020.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00021.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00022.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00023.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00024.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00025.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00026.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00027.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00028.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00029.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00030.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00031.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00032.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00033.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00034.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00035.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00036.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00037.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00038.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00039.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00040.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00041.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00042.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00043.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00044.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00045.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00046.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00047.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00048.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00049.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00050.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00051.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00052.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00053.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00054.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00055.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00056.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00057.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00058.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00059.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00060.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00061.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00062.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00063.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00064.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00065.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00066.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00067.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00068.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00069.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00070.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00071.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00072.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00073.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00074.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00075.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00076.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00077.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00078.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00079.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00080.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00081.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00082.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00083.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00084.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00085.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00086.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00087.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00088.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00089.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00090.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00091.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00092.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00093.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00094.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00095.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00096.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00097.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00098.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00099.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00100.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00101.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00102.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00103.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00104.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00105.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00106.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00107.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00108.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00109.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00110.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00111.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00112.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00113.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00114.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00115.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00116.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00117.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00118.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00119.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00120.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00121.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00122.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00123.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00124.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00125.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00126.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00127.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00128.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00129.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00130.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00131.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00132.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00133.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00134.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00135.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00136.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00137.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00138.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00139.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00140.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00141.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00142.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00143.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00144.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00145.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00146.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00147.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00148.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00149.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00150.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00151.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00152.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00153.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00154.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00155.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00156.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00157.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00158.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00159.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00160.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00161.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00162.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00163.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00164.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00165.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00166.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00167.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00168.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00169.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00170.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00171.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00172.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00173.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00174.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00175.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00176.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00177.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00178.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00179.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00180.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00181.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00182.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00183.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00184.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00185.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00186.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00187.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00188.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00189.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00190.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00191.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00192.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00193.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00194.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00195.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00196.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00197.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00198.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00199.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00200.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00201.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00202.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00203.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00204.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00205.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00206.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00207.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00208.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00209.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00210.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00211.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00212.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00213.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00214.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00215.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00216.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00217.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00218.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00219.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00220.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00221.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00222.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00223.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00224.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00225.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00226.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00227.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00228.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00229.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00230.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00231.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00232.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00233.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00234.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00235.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00236.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00237.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00238.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00239.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00240.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00241.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00242.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00243.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00244.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00245.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00246.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00247.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00248.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00249.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00250.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00251.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00252.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00253.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00254.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00255.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00256.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00257.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00258.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00259.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00260.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00261.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00262.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00263.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00264.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00265.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00266.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00267.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00268.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00269.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00270.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00271.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00272.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00273.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00274.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00275.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00276.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00277.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00278.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00279.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00280.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00281.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00282.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00283.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00284.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00285.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00286.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00287.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00288.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00289.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00290.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00291.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00292.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00293.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00294.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00295.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00296.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00297.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00298.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00299.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00300.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00301.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00302.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00303.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00304.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00305.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00306.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00307.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00308.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00309.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00310.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00311.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00312.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00313.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00314.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00315.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00316.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00317.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00318.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00319.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00320.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00321.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00322.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00323.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00324.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00325.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00326.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00327.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00328.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00329.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00330.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00331.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00332.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00333.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00334.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00335.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00336.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00337.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00338.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00339.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00340.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00341.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00342.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00343.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00344.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00345.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00346.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00347.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00348.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00349.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00350.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00351.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00352.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00353.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00354.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00355.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00356.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00357.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00358.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00359.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00360.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00361.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00362.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00363.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00364.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00365.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00366.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00367.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00368.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00369.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00370.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00371.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00372.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00373.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00374.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00375.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00376.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00377.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00378.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00379.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00380.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00381.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00382.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00383.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00384.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00385.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00386.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00387.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00388.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00389.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00390.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00391.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00392.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00393.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00394.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00395.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00396.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00397.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00398.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00399.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00400.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00401.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00402.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00403.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00404.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00405.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00406.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00407.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00408.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00409.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00410.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00411.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00412.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00413.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00414.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00415.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00416.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00417.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00418.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00419.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00420.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00421.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00422.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00423.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00424.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00425.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00426.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00427.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00428.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00429.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00430.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00431.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00432.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00433.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00434.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00435.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00436.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00437.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00438.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00439.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00440.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00441.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00442.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00443.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00444.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00445.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00446.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00447.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00448.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00449.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00450.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00451.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00452.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00453.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00454.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00455.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00456.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00457.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00458.jpg">
-    <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR/VOLUME-2-DESIGN-00459.jpg">
-  </div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/DOUBLE%20COL%20DESIGN%20WITH%20VECTOR/VOLUME-4-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/double';" class="btn btn-primary btn-lg custom" style="align-self: center;">Double colour</button>
+</div>
+
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/DOUBLE%20COL%20WITH%20MODEL/VOLUME-5-DESIGN-0001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/doublecolourwith';" class="btn btn-primary btn-lg custom" style="align-self: center;">Double colour + Models</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/SINGLE%20COl/VOLUME-11-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/single';" class="btn btn-primary btn-lg custom" style="align-self: center;">Single colour</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/handloom/VOLUME-18-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/handloom';" class="btn btn-primary btn-lg custom" style="align-self: center;">Handloom shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Jewellery%20shop/VOLUME-15-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/jewellery';" class="btn btn-primary btn-lg custom" style="align-self: center;">Jewellery shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Flexo%20design/VOLUME-7-DESIGN-00101.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/flexo';" class="btn btn-primary btn-lg custom" style="align-self: center;">Flexo</button>
+</div>
+
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Gents%20or%20male%20cloth/VOLUME-8-DESIGN-0001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/males';" class="btn btn-primary btn-lg custom" style="align-self: center;">Menswear shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Kids%20wear/VOLUME-10-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/kids';" class="btn btn-primary btn-lg custom" style="align-self: center;">Kidswear shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Jeans%20shop/VOLUME-14-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/jeans';" class="btn btn-primary btn-lg custom" style="align-self: center;">Jeans shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Mobile%20Shop/VOLUME-21-DESIGN-0101.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/mobile';" class="btn btn-primary btn-lg custom" style="align-self: center;">Mobile shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Marriage%20bag/VOLUME-31-DESIGN-00201.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/marriage';" class="btn btn-primary btn-lg custom" style="align-self: center;">Marriage bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Shoe%20Shop/VOLUME-24-DESIGN-00031.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/shoes';" class="btn btn-primary btn-lg custom" style="align-self: center;">Shoe shop bags</button>
+</div>
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/Sweet%20shop/VOLUME-27-DESIGN-00001.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" onclick="location.href='/sweets';" class="btn btn-primary btn-lg custom" style="align-self: center;">Sweet shop bags</button>
+</div>
+
+<div style="display:inline-block" class="text-center">
+  <br>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/Tech-Novus/images/main/MULTICOLOUR%20WITHOUT%20IMAGE/VOLUME-1-DESIGN-00037.jpg" style="height: 240px; width: 240px;">
+  <br>
+  <br>
+  <button type="button" style="background-color: #5a443a; color: #fdd0a5; outline: none !important; box-shadow: none; border-color: none !important; font-family: 'Montserrat', sans-serif; font-size: 15px;" class="btn btn-primary btn-lg custom" style="align-self: center;">Coming soon</button>
+</div>
 
 </div>

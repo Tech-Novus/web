@@ -6,6 +6,13 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
 
 // Multi colour + images
+router.get('/multic', ensureAuthenticated, (req, res) =>
+  res.render('multic', {
+    user: req.user
+  })
+);
+
+// Multi colour + images
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
     user: req.user
